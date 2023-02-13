@@ -1,11 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import Athlete from "./Athlete";
 import { useTeamStore } from "./TeamStore";
 import TradeForm from "./TradeForm";
-
-const lebroneJames = new Athlete("Lebron James", 37, 9);
-const stephCurry = new Athlete("Steph Curry", 34, 5);
 
 function Roster() {
   const { players } = useTeamStore();
